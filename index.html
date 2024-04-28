@@ -1,11 +1,96 @@
-<!doctype html> 
-<html lang="en"> 
-<head> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infoseite</title>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head> 
-<body> 
-	<div class="d-flex m-5"> 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    nav {
+        background-color: #666;
+        color: #fff;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav li {
+        display: inline;
+        margin: 0 20px;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+    }
+    section {
+        padding: 50px 20px;
+        text-align: center;
+    }
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    a.footer{
+        color: white;
+        text-decoration: none;
+    }
+    a{
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Willkommen auf Jonas' Infoseite</h1>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">Über mich</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#faehigkeiten">Fähigkeiten</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#qualifikationen">Qualifikationen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="about">
+    <h2>Über mich</h2>
+    <div class="container d-flex justify-content-center mt-5"> 
 		<div class="card"> 
 			<div class="row g-0"> 
 				<div class="col-md-4"> 
@@ -13,37 +98,65 @@
 				</div> 
 				<div class="col-md-8"> 
 					<div class="card-body"> 
-						<h5 class="card-title"> 
-							Jonas Wolf 
-						</h5> 
 						<p class="card-text">
-                            Hallo, mein Name ist Jonas Wolf, und mit meinen 22 Jahren befinde ich mich gerade in meiner aufregenden Ausbildung zum Fachinformatiker für Anwendungsentwicklung. Durch meine Leidenschaft für Technologie und Computer habe ich bereits früh begonnen, mich in die Welt der Programmierung einzuarbeiten. Ich beherrsche verschiedene Programmiersprachen und habe insbesondere eine starke Affinität zur objektorientierten Programmierung (OOP) entwickelt.
-                            <br><br>
-                            In meiner Freizeit tauche ich gerne in Hardwareprojekte ein und habe bereits einige spannende Projekte mit dem ESP32 und dem Raspberry Pi realisiert. Diese Erfahrungen haben nicht nur mein technisches Verständnis erweitert, sondern auch meine Begeisterung für die Möglichkeiten der Elektronik und des IoT verstärkt.
-                            <br><br>
-                            Neben meiner fachlichen Ausbildung ist es mir wichtig, einen Ausgleich zu finden. Daher ziehe ich es oft vor, in der Natur zu wandern und die Schönheit der Umgebung zu genießen. Abends entspanne ich mich gerne bei Computerspielen, die mir nicht nur Spaß machen, sondern auch meine kreative Seite ansprechen und mein Denkvermögen herausfordern.
-                            <br><br>
-                            Ich bin immer auf der Suche nach neuen Herausforderungen und Möglichkeiten, mein Wissen und meine Fähigkeiten weiter auszubauen. Es würde mich freuen, Teil eines Teams zu sein, das innovative Lösungen entwickelt und gemeinsam an spannenden Projekten arbeitet.
+                            Hallo, mein Name ist Jonas Wolf ich bin 22 Jahre alt, und befinde mich gerade 
+                            in einer Ausbildung zum Fachinformatiker für Anwendungsentwicklung. 
+                            Durch meine Leidenschaft für Technologie und Computer habe ich bereits früh begonnen, 
+                            mich in die Welt der Programmierung einzuarbeiten.
                         </p>
-                        
-						<p class="card-text"> 
-							<small class="text-muted"> 
-								zuletzt Aktualisiert am 27.04.2024 
-							</small> 
-						</p> 
 					</div> 
 				</div> 
 			</div>
-            <div class="row g-0">
-                <div class="col-md-12 text-center">
-                    <p >Meine Social-Media Links:</p>
-                    <a href="https://github.com/Jo-Broo"><i class="fa fa-github fa-2x"></i></a>
-                </div>
-            </div>
 		</div> 
-	</div> 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-</body> 
+	</div>
+</section>
+
+<div class="border border-top-0 border-2 mx-2"></div>
+
+<section id="faehigkeiten">
+    <h2>Fähigkeiten</h2>
+    <p>Meine Fähigkeiten erstrecken sich über verschiedene Bereiche der Softwareentwicklung. Insbesondere habe ich umfassende Kenntnisse im Bereich OOP und Backend-Programmierung und Datenbanken erworben, wodurch ich in der Lage bin, komplexe Anwendungen zu entwickeln und effizient mit großen Datenmengen umzugehen. Zu meinen Fähigkeiten gehören:</p>
+    <ul>
+        <li><strong>SQL (Oracle Datenbanken):</strong> Ich habe Erfahrung in der Erstellung und Verwaltung von relationalen Datenbanken, einschließlich der Optimierung von Abfragen und der Sicherstellung der Datenintegrität.</li>
+        <li><strong>C# (WinForms-Anwendungen):</strong> Mit C# habe ich Desktop-Anwendungen entwickelt, die eine benutzerfreundliche Oberfläche und eine nahtlose Interaktion mit Datenbanken ermöglichen.</li>
+        <li><strong>Python (Skripte zur Datenanalyse):</strong> Durch die Verwendung von Python habe ich Skripte entwickelt, um Daten aus verschiedenen Quellen wie Excel-Dateien zu analysieren und zu verarbeiten, was mir wertvolle Einblicke und Erkenntnisse verschafft hat.</li>
+        <li><strong>OOP (Object Oriented Programming):</strong> Ich habe ein fundiertes Verständnis der objektorientierten Programmierung und kann Konzepte wie Vererbung, Polymorphismus und Kapselung erfolgreich auf Probleme anwenden.</li>    </ul>
+    <p>Der Bereich Frontend gehört ehrlicherweise nicht zu meinen Stärken allerdings habe ich auch hier Kenntnisse erworben um meine Fähigkeiten zu erweitern. Hier sind einige meiner Kenntnisse im Frontend-Bereich:</p>
+    <ul>
+        <li><strong>HTML:</strong> Ich erstelle strukturierte und semantisch korrekte HTML-Dokumente, um eine solide Grundlage für Webanwendungen zu schaffen.</li>
+        <li><strong>CSS:</strong> Mit CSS gestalte ich ansprechende Benutzeroberflächen und sorge für ein konsistentes Erscheinungsbild über alle Plattformen hinweg.</li>
+        <li><strong>JavaScript:</strong> Ich nutze JavaScript, um interaktive Funktionen und dynamische Inhalte in meine Webanwendungen zu integrieren, was die Benutzererfahrung verbessert und die Anwendung lebendiger macht.</li>
+        <li><strong>PHP:</strong> Mein Verständnis von PHP ermöglicht es mir, serverseitige Logik zu implementieren und dynamische Webseiten zu erstellen, die auf Benutzerinteraktion reagieren und Daten verarbeiten können.</li>
+    </ul>
+</section>
+
+<div class="border border-top-0 border-2 mx-2"></div>
+
+<section id="qualifikationen">
+    <h2>Zertifikate</h2>
+    <p>Im Rahmen meiner Ausbildung konnte ich verschiedene Lehrgänge im <a href="https://ebz-verbund.de/">Erfurter Bildungszentrum</a> absolvieren. Hier sind einige meiner erworbenen Zertifikate:</p>
+    <ul>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+    </ul>
+</section>
+
+<div class="border border-top-0 border-2 mx-2"></div>
+
+<section id="kontakt">
+    <h2>Kontakt</h2>
+    <p>E-Mail: jonas@wolf.de<br>Telefon: 123456789</p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Jonas Wolf. Alle Rechte vorbehalten.</p>
+    <a class="footer" href="https://github.com/Jo-Broo"><i class="fa fa-github fa-2x"></i></a>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
 </html>
